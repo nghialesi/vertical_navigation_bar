@@ -1,8 +1,8 @@
 name: vertical_navigation_bar
 description: A simple vertical navigation bar for Flutter app
 version: 0.0.1
-author:
-homepage:
+author: Nghia Le Si <lesinghia@outlook.com>
+homepage: https://github.com/nghialesi/vertical_navigation_bar
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
