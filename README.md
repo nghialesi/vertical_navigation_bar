@@ -11,7 +11,7 @@ A simple vertical navigation bar for Flutter app
 **1. Install**
 ```yaml
 dependencies:
-  vertical_navigation_bar: ^0.0.1
+  vertical_navigation_bar: ^0.0.2
 ```
 
 **2. Run flutter command**
