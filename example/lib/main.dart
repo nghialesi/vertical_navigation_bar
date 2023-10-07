@@ -23,22 +23,19 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  final pageController = PageController(
-      initialPage: 0,
-      keepPage: true
-  );
+  final pageController = PageController(initialPage: 0, keepPage: true);
 
   final navItems = [
     SideNavigationItem(icon: FontAwesomeIcons.calendarCheck, title: "New task"),
-    SideNavigationItem(icon: FontAwesomeIcons.calendarAlt, title: "Personal task"),
-    SideNavigationItem(icon: FontAwesomeIcons.fileAlt, title: "Personal document"),
+    SideNavigationItem(
+        icon: FontAwesomeIcons.calendarAlt, title: "Personal task"),
+    SideNavigationItem(
+        icon: FontAwesomeIcons.fileAlt, title: "Personal document"),
     SideNavigationItem(icon: FontAwesomeIcons.calendar, title: "Company task"),
-    SideNavigationItem(icon: FontAwesomeIcons.arrowCircleRight, title: "Options")
+    SideNavigationItem(
+        icon: FontAwesomeIcons.arrowCircleRight, title: "Options")
   ];
   final initialTab = 0;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -47,17 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           SideNavigation(
             navItems: this.navItems,
-            itemSelected: (index){
-              pageController.animateToPage(
-                  index,
-                  duration: Duration(milliseconds: 300),
-                  curve: Curves.linear
-              );
+            itemSelected: (index) {
+              pageController.animateToPage(index,
+                  duration: Duration(milliseconds: 300), curve: Curves.linear);
             },
             initialIndex: 0,
-            actions: <Widget>[
-
-            ],
+            actions: <Widget>[],
           ),
           Expanded(
             child: PageView.builder(
@@ -65,13 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
               controller: pageController,
               scrollDirection: Axis.vertical,
               physics: NeverScrollableScrollPhysics(),
-              itemBuilder: (context, index){
+              itemBuilder: (context, index) {
                 return Container(
                     color: Colors.blueGrey.withOpacity(0.1),
                     child: Center(
                       child: Text("Page " + index.toString()),
-                    )
-                );
+                    ));
               },
             ),
           )

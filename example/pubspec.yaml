@@ -11,10 +11,10 @@ description: A simple example for using vertical navigation bar
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.0.1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -23,8 +23,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  vertical_navigation_bar: ^0.0.1
-  font_awesome_flutter: ^8.4.0
+  vertical_navigation_bar: ^0.0.2
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   flutter_test:
