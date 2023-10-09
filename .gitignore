@@ -26,6 +26,7 @@
 .pub-cache/
 .pub/
 build/
+.puro.json
 
 # Android related
 **/android/**/gradle-wrapper.jar
